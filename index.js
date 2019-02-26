@@ -20,6 +20,10 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  let str="In your cart, you have";
+  for(let i=0;i<cart.length;i++){
+    str+=``;
+  }
 }
 
 function total() {
