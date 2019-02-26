@@ -23,7 +23,7 @@ function viewCart() {
   let str="In your cart, you have";
   for(let i=0;i<cart.length;i++){
     const info = cart[i];
-    str+= i ==0? "": ", ";
+    str+= i === 0 ? "": ", ";
     str+=`${info.itemName} at ${info.itemPrice}`;
   }
 }
