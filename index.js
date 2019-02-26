@@ -12,7 +12,7 @@ function setCart(c) {
 function addToCart(item) {
  // write your code here
  const obj = {
-   itemName: item.itemName,
+   itemName: item,
    itemPrice: Math.floor(Math.random() * 100)
  };
 }
