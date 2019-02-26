@@ -24,6 +24,7 @@ function viewCart() {
   for(let i=0;i<cart.length;i++){
     const info = cart[i];
     str+= i === 0 ? "": ", ";
+    str+= i === cart.length - 1 ? "and ": "";
     str+=`${info.itemName} at ${info.itemPrice}`;
   }
 }
