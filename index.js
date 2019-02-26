@@ -44,7 +44,7 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   console.log(item);
-  const index = cart.find(i=> i.itemName === item);
+  const index = cart.findIndex(i=> i.itemName === item);
   if(index === -1) {
     alert("That item is not in your cart.");
     return cart;
