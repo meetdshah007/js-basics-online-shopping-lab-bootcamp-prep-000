@@ -26,6 +26,7 @@ function viewCart() {
     str+= i === cart.length - 1 ? "and ": "";
     str+=`${info.itemName} at ${info.itemPrice}${i=== cart.length - 1 ? ".": ", "}`;
   }
+  return str;
 }
 
 function total() {
