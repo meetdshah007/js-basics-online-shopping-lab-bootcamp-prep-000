@@ -22,7 +22,7 @@ function viewCart() {
   // write your code here
   if(!cart.length) return "Your shopping cart is empty.";
   
-  let str="In your cart, you have";
+  let str="In your cart, you have ";
   for(let i=0;i<cart.length;i++){
     const info = cart[i];
     str+= (i === cart.length - 1 && i > 0)? "and ": "";
