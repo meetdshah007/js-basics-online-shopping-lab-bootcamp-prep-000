@@ -13,7 +13,7 @@ function addToCart(item) {
  // write your code here
  const obj = {
    itemName: item.itemName,
-   itemPrice: Math.random()
+   itemPrice: Math.floor(Math.random() * 100)
  };
 }
 
