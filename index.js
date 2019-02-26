@@ -22,7 +22,9 @@ function viewCart() {
   // write your code here
   let str="In your cart, you have";
   for(let i=0;i<cart.length;i++){
-    str+=``;
+    const info = cart[i];
+    str+= i ==0? "": ", ";
+    str+=`${info.itemName} at ${info.itemPrice}`;
   }
 }
 
