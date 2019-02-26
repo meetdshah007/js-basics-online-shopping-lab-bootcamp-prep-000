@@ -25,7 +25,7 @@ function viewCart() {
   let str="In your cart, you have";
   for(let i=0;i<cart.length;i++){
     const info = cart[i];
-    str+= i === cart.length - 1 ? "and ": "";
+    str+= (i === cart.length - 1 && i >0)? "and ": "";
     str+=`${info.itemName} at ${info.itemPrice}${i=== cart.length - 1 ? ".": ", "}`;
   }
   return str;
